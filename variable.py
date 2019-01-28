@@ -1,4 +1,3 @@
-import datetime
 import boto3
 
 # varible
@@ -10,7 +9,7 @@ s3_endpoint_url = 'http://s3.vcloudlab.pro:4569'
 sqs_endpoint_url = 'http://sqs.vcloudlab.pro:9324'
 dynamoDB_endpoint_url = 'http://dynamodb.vcloudlab.pro:8000'
 
-getTime = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+baseURL = "http://s3.vcloudlab.pro:4569/s3/vcloudlab_bucket/"
 
 s3_client = boto3.client(
     's3',
@@ -34,3 +33,18 @@ dynamoDB_resource = boto3.resource(
     endpoint_url = dynamoDB_endpoint_url)
 
 # function
+def send_message(filename):
+    
+    # 調用 SQS
+    vlabQueues = sqs_client.list_queues( QueueNamePrefix = queueName )
+    queue_url = vlabQueues['QueueUrls'][0]
+    # print(queue_url)
+    
+    # 將 filename 透過 SQS 傳輸
+    enqueue_response = sqs_client.send_message(
+        QueueUrl = queue_url, 
+        MessageBody = filename
+    )
+    # print('Message ID : ',enqueue_response['MessageId'])
+    return True
+    
