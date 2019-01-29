@@ -20,3 +20,12 @@ Default region name [None] :  ap-northeast-1
 Default output format [None] : text
 ```
 
+開啟 web.ipynb
+- 依序執行到第5行
+
+開啟 worker.ipynb
+- 依序執行到第4行
+
+開啟瀏覽器
+- 請輸入執行環境的ip:5000
+- 此時環境已開啟完畢。
