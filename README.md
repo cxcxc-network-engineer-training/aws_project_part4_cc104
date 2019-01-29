@@ -4,7 +4,7 @@
 
 ```sh
 $ git clone https://github.com/iii-cutting-edge-tech-lab/aws_project_part4_cc104.git
-$ cd aws_project_RD_cc104
+$ cd aws_project_part4_cc104
 $ docker-compose build
 $ docker-compose up -d
 ```
