@@ -1,0 +1,22 @@
+# 01_VPC 
+
+## 1.先點選左方Your VPCs，再點選Create VPC
+![](https://d2mxuefqeaa7sj.cloudfront.net/s_D9B64ACBDF11324D58A2D9EEDE6624BB6F72F59119918FF43A44F1662ECCDFCE_1548770314911_8888888.jpg)
+
+## 2.創建VPC
+
+(1)Name tag : cc104_vpc
+(2)IPv4 CIDR block: 10.10.10.0/16
+ (補充:我們會用私有 IP 地址稱呼位於 VPC IPv4 CIDR 範圍中的 IP 地址。)
+(3)No IPv6 CIDR Block
+(4)Tenency: Default
+
+![](https://d2mxuefqeaa7sj.cloudfront.net/s_D9B64ACBDF11324D58A2D9EEDE6624BB6F72F59119918FF43A44F1662ECCDFCE_1548814110500_0130.jpg)
+
+## 3.VPC成功創建後出現此畫面(點選close)
+![](https://d2mxuefqeaa7sj.cloudfront.net/s_9E3F718E84A3608B99BAD50C112B49EDF0DF87D510155714CC8B6962BEEF3AFA_1548582958054_3.jpg)
+
+## 4.剛才創建好的cc104_web_vpc出現在Your VPCs列表中
+![](https://d2mxuefqeaa7sj.cloudfront.net/s_9E3F718E84A3608B99BAD50C112B49EDF0DF87D510155714CC8B6962BEEF3AFA_1548582968907_4.jpg)
+
+
