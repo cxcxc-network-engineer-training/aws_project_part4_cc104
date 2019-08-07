@@ -11,29 +11,3 @@ services:
     #  - /home/user/.aws/:/home/jovyan/.aws/
     command: start-notebook.sh --NotebookApp.token=''
 
-  dynamoDB:
-    image: amazon/dynamodb-local
-    container_name: dynamodb.vcloudlab.pro
-    ports:
-      - "8000:8000"
-    volumes:
-      - ./dynamodb_data/data:/home/dynamodblocal/data
-  sqs:
-    image: vsouza/sqs-local 
-    container_name: sqs.vcloudlab.pro
-    ports:
-      - "9324:9324"
-
-  fake-s3:
-    image: gliffy/fake-s3
-    container_name: s3.vcloudlab.pro
-    ports:
-      - "4569:4569"
-    volumes:
-      - ./pic/:/fakes3_root
-  
-
-
-
-
-
