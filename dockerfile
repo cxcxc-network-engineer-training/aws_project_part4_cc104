@@ -1,6 +1,3 @@
 From jupyter/base-notebook
-RUN pip install PyMySQL
-RUN pip install boto3
-RUN pip install awscli
-RUN pip install flask
-RUN pip install pytz
+RUN pip install -r requirements.txt
+EXPOSE 4569 8000 8888 5000 9324  

@@ -1,0 +1,5 @@
+PyMySQL
+boto3
+awscli
+flask
+pytz
