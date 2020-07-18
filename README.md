@@ -27,6 +27,6 @@ Default output format [None] : text
 - 依序執行到第4行
 
 開啟瀏覽器
-- 請輸入執行環境的ip:5000
+- 請輸入執行環境的http://localhost:5000
 - 此時環境已開啟完畢。
 
